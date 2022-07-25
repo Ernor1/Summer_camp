@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif, ' Montserrat';
+    width: 100vw;
 
 
 
@@ -784,50 +785,12 @@ li {
 @media only screen and (max-width:400px) {
     .container {
         background-color: #E74040;
-        width: 100vw;
+        width: 100vw !important;
         overflow-x: hidden;
 
     }
 
-    .container .home {
-        background: none;
-        width: 100%;
-    }
+    .container .home {}
 
-    nav {
-        width: 90%;
-    }
 
-    nav .links {
-        display: none;
-    }
-
-    nav h2 {
-        margin: 20px;
-        width: 30%;
-    }
-
-    nav .nav-button {
-        display: none;
-    }
-
-    .bars {
-        display: block;
-        margin: 20px 50px;
-    }
-
-    .content {
-        width: 100%;
-
-    }
-
-    .content h3,
-    .content p {
-        width: 100%;
-    }
-
-    #p1 {
-        width: 300px;
-        margin: 20px;
-    }
 }
