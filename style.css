@@ -781,3 +781,78 @@ li {
 }
 
 /*small screen*/
+@media only screen and (max-width:400px) {
+    body {
+        width: 390px !important;
+        background-color: #E74040;
+        overflow-x: hidden;
+    }
+
+    body .container {
+        width: 100%;
+        margin: 0;
+        background-color: #FFCE31;
+    }
+
+    body .container .content {
+        width: 100%;
+        background-color: aqua;
+        color: black;
+    }
+
+    .content #p1 {
+        margin: 0;
+        width: 50%;
+    }
+
+    .content h3 {
+        color: #96BB7C !important;
+        font-size: large;
+    }
+
+    body .container .content h3 {
+        font-size: 15px;
+        color: black;
+        width: 200px
+    }
+
+    body .container .home {
+        width: 100%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+        position: absolute;
+        left: 90%;
+        top: 20px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    nav h2 {
+        margin-left: 10px;
+    }
+
+    .content3 {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cardscon {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+}
