@@ -124,7 +124,7 @@ button {
     line-height: 80px;
     margin-bottom: 80px;
     text-align: center;
-    width: 600px;
+    width: 50vw;
 }
 
 .content #p2 {
@@ -463,6 +463,10 @@ button {
     right: 30px;
 }
 
+.cancel {
+    display: none;
+}
+
 .content5 .par h3 {
     color: #96BB7C;
     font-weight: 700;
@@ -774,4 +778,196 @@ li {
 .bottom h3 {
 
     color: #737373;
+}
+
+.bars {
+    display: none;
+}
+
+/*small screen*/
+@media only screen and (max-width:400px) {
+    html {
+        overflow-x: hidden !important;
+    }
+
+    body {
+        width: 100vw !important;
+
+        overflow-x: hidden !important;
+    }
+
+    body .container {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden !important;
+    }
+
+    body .container .content {
+        width: 100%;
+
+        color: black;
+        overflow-x: hidden !important;
+    }
+
+    .content #p1 {
+        margin-left: 20px;
+        width: 67%;
+    }
+
+    .content h3 {
+        color: #96BB7C !important;
+        font-size: large;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .content #p2 {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    body .container .content h3 {
+        font-size: 15px;
+        color: black;
+        width: 200px
+    }
+
+    body .container .home {
+        width: 100%;
+    }
+
+    .content2 p {
+        width: 67%;
+    }
+
+    .content4 {
+        flex-direction: column;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .content4 div {
+        width: 90%;
+        align-self: center;
+    }
+
+    .content4 div p {
+        width: 90%;
+    }
+
+    .content5 .par {
+        width: 90%;
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .content5 .par h1 {
+        font-size: 20px;
+        width: 90%;
+        margin: 0;
+    }
+
+    .cards .card1 {
+        height: 660PX;
+    }
+
+    .content5 .par p {
+
+        width: 90%;
+        margin: 0;
+    }
+
+    .content6 {
+        width: 90%;
+    }
+
+    .search input {
+        width: 90%;
+    }
+
+    .content6 p {
+        width: 90%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 15px;
+        width: 40px;
+        border: none;
+        background: transparent;
+        color: white;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    nav h2 {
+        margin-left: 10px;
+    }
+
+    .content3 {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cardscon {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+}
+
+.li-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    flex-direction: column;
+    background-color: #96bb7c6c
+}
+
+.lis-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+
+
+
+}
+
+.lis-click .cancel {
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 20px;
+    right: 20px;
+    background-color: #96bb7c;
+    border: none;
+    color: white;
+
+
+}
+
+.bars-click {
+    display: none;
 }
