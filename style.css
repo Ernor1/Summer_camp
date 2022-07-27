@@ -833,6 +833,62 @@ li {
         width: 100%;
     }
 
+    .content2 p {
+        width: 67%;
+    }
+
+    .content4 {
+        flex-direction: column;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .content4 div {
+        width: 90%;
+        align-self: center;
+    }
+
+    .content4 div p {
+        width: 90%;
+    }
+
+    .content5 .par {
+        width: 90%;
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .content5 .par h1 {
+        font-size: 20px;
+        width: 90%;
+        margin: 0;
+    }
+
+    .cards .card1 {
+        height: 660PX;
+    }
+
+    .content5 .par p {
+
+        width: 90%;
+        margin: 0;
+    }
+
+    .content6 {
+        width: 90%;
+    }
+
+    .search input {
+        width: 90%;
+    }
+
+    .content6 p {
+        width: 90%;
+    }
+
     .links {
         display: none;
     }
