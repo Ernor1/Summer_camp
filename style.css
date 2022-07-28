@@ -89,6 +89,12 @@ button {
     cursor: pointer;
 }
 
+.but1:hover {
+    background-color: #96BB7C;
+    color: white;
+
+}
+
 .but2 {
     background-color: #96BB7C;
     border-radius: 10px;
@@ -101,6 +107,13 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.but2:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #96BB7C;
+
 }
 
 .content {
@@ -265,6 +278,11 @@ button {
     line-height: 24px;
 }
 
+.content4 button:hover {
+
+    border: 1px solid #96BB7C;
+}
+
 .content4 .bar1 {
     background-color: #E74040;
     margin-bottom: 40px;
@@ -312,6 +330,7 @@ button {
     display: flex;
     /* justify-content: space-around; */
     flex-direction: column;
+    transition: all ease-in-out .4s;
 }
 
 .content5 .card1 .image .sale {
@@ -329,6 +348,10 @@ button {
     border-radius: 3px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
+}
+
+.card1:hover .image {
+    transform: scale(1.25) rotate(2deg);
 }
 
 .content5 .card1 .image .i {
@@ -463,6 +486,11 @@ button {
     right: 30px;
 }
 
+.content5 .card1 .con button:hover {
+    background-color: #96BB7C;
+    color: white;
+}
+
 .cancel {
     display: none;
 }
@@ -503,6 +531,39 @@ button {
     height: 378px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.cards2 .layer {
+    z-index: 1;
+    position: absolute;
+    top: calc(100% - 2px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #96BB7C;
+    transition: 0.5s;
+}
+
+.cards2 .content7 {
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.cards2:hover .layer {
+    top: 0;
+}
+
+.cards2:hover .content7 p,
+.cards2:hover .content7 h1,
+.cards2:hover .content7 h3 {
+    color: white;
+
+
 }
 
 .cards2 img {
@@ -564,6 +625,11 @@ button {
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
     margin: 20px;
+    pointer-events: auto;
+
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out;
 }
 
 .cards3 .image {
@@ -582,6 +648,16 @@ button {
     flex-direction: column;
     align-items: center;
 
+}
+
+.cardscon:hover>.cards3:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.cardscon:hover>.cards3:not(:hover) {
+    opacity: 0.5;
 }
 
 .con h2 {
@@ -879,6 +955,20 @@ li {
         width: 90%;
         margin: 0;
     }
+
+    .cards2 {
+        margin: 0;
+    }
+
+    .cards2 .content7 {
+        margin-left: 30px;
+    }
+
+    .cards3 {
+        margin-left: 70px;
+    }
+
+
 
     .content6 {
         width: 90%;
